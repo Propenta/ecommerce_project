@@ -11,8 +11,12 @@
         {% for article in articles %}
             <div class="col-6 col-md-3">
                 <div class="card h-100 border-0 shadow-sm product-card">
-                    <div class="position-relative">
-                        <!-- <img src="{% static 'images/montre_x7.webp' %}" class="card-img-top" alt="Smartphone XS Pro"> -->
+                    <div class="position-relative" style="height: 300px; overflow: hidden;">
+                        {% if article.image %}
+                            <img src="{{ article.image.url }}" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="{{ article.nom }}">
+                        {% else %}
+                            <img src="{% static 'images/default_product.jpg' %}" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="{{ article.nom }}">
+                        {% endif %}
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">{{ article.nom }}</h5>
@@ -40,7 +44,6 @@
                     </div>
                 </div>
             </div>
-        
         {% endfor %}
     </div>
 </div>
