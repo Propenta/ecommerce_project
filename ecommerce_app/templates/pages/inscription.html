@@ -1,0 +1,99 @@
+{% extends "../base.html" %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-sm rounded-lg border-0">
+        <div class="card-header bg-primary text-white py-4">
+          <h3 class="text-center mb-0 font-weight-normal">Inscription</h3>
+          <p class="text-center mb-0 mt-2 small">Rejoignez notre plateforme en quelques secondes</p>
+        </div>
+        
+        <div class="card-body p-4 p-lg-5">
+          <form>
+            <div class="card mb-4 border-0 bg-light">
+              <div class="card-body">
+                <h6 class="text-uppercase text-primary font-weight-bold mb-3 small">Vos informations</h6>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="inputNom" class="font-weight-bold small">Nom</label>
+                      <input type="text" class="form-control form-control-lg" id="inputNom" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="inputPrenom" class="font-weight-bold small">Prénom</label>
+                      <input type="text" class="form-control form-control-lg" id="inputPrenom" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAdresse" class="font-weight-bold small">Adresse</label>
+                  <input type="text" class="form-control form-control-lg" id="inputAdresse" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card mb-4 border-0 bg-light">
+              <div class="card-body">
+                <h6 class="text-uppercase text-primary font-weight-bold mb-3 small">Compte utilisateur</h6>
+                
+                <div class="form-group">
+                  <label for="inputUsername" class="font-weight-bold small">Nom d'utilisateur</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text bg-white">@</span>
+                    </div>
+                    <input type="text" class="form-control form-control-lg" id="inputUsername" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="inputEmail" class="font-weight-bold small">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="inputEmail" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card mb-4 border-0 bg-light">
+              <div class="card-body">
+                <h6 class="text-uppercase text-primary font-weight-bold mb-3 small">Sécurité</h6>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="inputPassword" class="font-weight-bold small">Mot de passe</label>
+                      <input type="password" class="form-control form-control-lg" id="inputPassword" required>
+                      <small class="text-muted">8 caractères minimum</small>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="inputConfirmPassword" class="font-weight-bold small">Confirmation</label>
+                      <input type="password" class="form-control form-control-lg" id="inputConfirmPassword" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="text-muted">Déjà inscrit ?</a>
+              <button type="submit" class="btn btn-primary btn-lg px-5">S'inscrire</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4 text-muted">
+        <small>En vous inscrivant, vous acceptez notre politique de confidentialité.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
