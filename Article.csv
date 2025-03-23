@@ -1,0 +1,16 @@
+id,nom,description,quantite_stock,prix,image
+1,"Dell Latitude","Core i7 de 7th Gen, avec un processeur de 2.90Ghz * 8, un disque dur de 512Go SSD + 16Go de RAM",15,250000.0,articles/dell_latitude.jpg
+2,"iPhone 13 Pro","Smartphone Apple avec écran Super Retina XDR, triple caméra et processeur A15 Bionic.",50,750000.0,articles/iphon_13_pro.webp
+3,"Samsung Galaxy S21 Ultra","Smartphone Samsung avec écran Dynamic AMOLED 2X, appareil photo 108MP et processeur Exynos 2100.",40,700000.0,articles/sam.jpg
+4,"Xiaomi Redmi Note 10 Pro","Smartphone Xiaomi avec écran AMOLED, batterie 5020mAh et quad caméra 108MP.",100,250000.0,articles/xiaomi.webp
+5,"Apple Watch Series 7","Montre connectée Apple avec écran Retina, suivi d'activité et résistance à l'eau.",30,350000.0,articles/apple.png
+6,"Samsung Galaxy Watch 4","Montre connectée Samsung avec écran Super AMOLED, suivi de santé et compatibilité Android.",25,300000.0,articles/s_m_uNHAXAQ.jpg
+7,"Huawei Watch GT 2","Montre connectée Huawei avec écran AMOLED, suivi de santé et autonomie de 2 semaines.",20,200000.0,articles/hu.jpg
+8,"AirPods Pro","Écouteurs sans fil Apple avec réduction active du bruit et qualité sonore exceptionnelle.",60,150000.0,articles/air_pod.jpg
+9,"Samsung Galaxy Buds Pro","Écouteurs sans fil Samsung avec réduction de bruit active et son haute qualité.",50,120000.0,articles/sam_air.png
+10,"Xiaomi Mi True Wireless Earbuds","Écouteurs sans fil Xiaomi avec son clair et autonomie de 20 heures.",80,80000.0,articles/air_hua.webp
+11,"Power Bank 20000mAh","Batterie externe de 20000mAh avec double port USB et charge rapide.",120,30000.0,articles/power.jpg
+12,"Chargeur Sans Fil Qi","Chargeur sans fil compatible avec les smartphones supportant la charge Qi.",90,25000.0,articles/sans_fil.jpg
+13,"Étui iPhone 13 Pro","Étui de protection en silicone pour iPhone 13 Pro, disponible en plusieurs couleurs.",200,15000.0,articles/etui_iphon.webp
+14,"Étui Samsung Galaxy S21 Ultra","Étui de protection en cuir pour Samsung Galaxy S21 Ultra, design élégant.",150,20000.0,articles/etui_sam.jpg
+15,"Support de Téléphone Voiture","Support de téléphone universel pour voiture, fixation ventouse et rotation à 360°.",100,10000.0,articles/support_telephone_voiture.jpeg

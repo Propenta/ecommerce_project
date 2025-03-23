@@ -52,7 +52,7 @@
                 <div class="d-flex align-items-center">
                     {% if user.is_authenticated %}
                         <span class="text-light me-3">{{ user.username }}</span>
-                        <a href="{% url 'deconnexion' %}" class="btn btn-outline-light">Se déconnecter</a>
+                        <a href="{% url 'deconnexion' %}" class="btn btn-outline-danger me-2">Se déconnecter</a>
                     {% else %}
                         <a href="{% url 'connexion' %}" class="btn btn-outline-light me-2">Se connecter</a>
                         <a href="{% url 'inscription' %}" class="btn btn-light me-3">S'inscrire</a>
