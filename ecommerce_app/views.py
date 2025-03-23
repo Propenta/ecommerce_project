@@ -1,4 +1,4 @@
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from .forms import InscriptionForm
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import *
@@ -28,3 +28,16 @@ def inscription(request):
     else:
         form = InscriptionForm()
     return render(request, 'pages/inscription.html', {'form': form})
+
+def user_login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('home') 
+        else:
+            return render(request, 'pages/connexion.html', {'form': {'errors': True}})
+    else:
+        return render(request, 'pages/connexion.html')

@@ -22,40 +22,26 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text bg-white">@</span>
                     </div>
-                    <input type="text" class="form-control form-control-lg" id="inputUsername" placeholder="Votre nom d'utilisateur" required>
+                    <input type="text" class="form-control form-control-lg" id="inputUsername"required>
                   </div>
                 </div>
                 
                 <div class="form-group mb-0">
                   <label for="inputPassword" class="font-weight-bold small">Mot de passe</label>
-                  <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="••••••••" required>
+                  <input type="password" class="form-control form-control-lg" id="inputPassword" required>
                 </div>
               </div>
             </div>
             
-            <div class="d-flex justify-content-between align-items-center mb-4">              
-              <a href="#" class="text-primary small font-weight-bold">Mot de passe oublié ?</a>
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Se connecter</button>
-            
-            <div class="d-flex align-items-center my-4">
-              <div class="flex-grow-1 border-top"></div>
-              <div class="px-3 text-muted small">OU</div>
-              <div class="flex-grow-1 border-top"></div>
-            </div>
-            
-            <div class="text-center">
-              <p class="mb-0">Vous n'avez pas encore de compte ?</p>
-              <a href="{% url 'inscription' %}" class="btn btn-light mt-2">Créer un compte</a>
-            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <button type="submit" class="btn btn-primary btn-lg px-5">S'inscrire</button>
+                <a href="{% url 'inscription' %}" class="text-muted">Pas de compte ?</a>
+            </div>            
+
           </form>
         </div>
       </div>
       
-      <div class="text-center mt-4">
-        <small class="text-muted">Besoin d'aide ? <a href="#" class="text-primary">Contactez notre support</a></small>
-      </div>
     </div>
   </div>
 </div>
